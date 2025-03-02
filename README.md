@@ -74,40 +74,45 @@ The script will perform the following:
 After running the code, you should see output similar to this:
 
 ```bash
-======== Fold 1 / 3 ========
-Epoch 1 / 4 - Fold 1
-  Average training loss: 0.45
-  Training epoch took: 0:01:12
+======== Fold 3 / 3 ========
+Epoch 4 / 4 - Fold 3
+  Batch 40 of 224. Elapsed: 0:00:59.
+  Batch 80 of 224. Elapsed: 0:01:57.
+  Batch 120 of 224. Elapsed: 0:02:56.
+  Batch 160 of 224. Elapsed: 0:03:55.
+  Batch 200 of 224. Elapsed: 0:04:53.
+  Average training loss: 0.10
+  Training epoch took: 0:05:28
 
 Running Validation...
-  Accuracy: 0.82
-  Validation Loss: 0.35
-  Validation took: 0:00:12
+  Accuracy: 0.97
+  Validation Loss: 0.10
+  Validation took: 0:00:52
 
 Fold Classification Report:
               precision    recall  f1-score   support
 
-           0       0.78      0.75      0.76       100
-           1       0.83      0.85      0.84       120
-           2       0.79      0.75      0.77       110
+           0       0.95      0.96      0.96       218
+           1       0.96      0.99      0.97      1030
+           2       0.98      0.91      0.94       543
 
-    accuracy                           0.82       330
-   macro avg       0.80      0.78      0.79       330
-weighted avg       0.81      0.82      0.81       330
+    accuracy                           0.96      1791
+   macro avg       0.96      0.95      0.96      1791
+weighted avg       0.96      0.96      0.96      1791
 
-Fold ROC-AUC Score: 0.91
+Fold ROC-AUC Score: 0.9954
 
 ======== Final Evaluation Across All Folds ========
 Overall Classification Report:
               precision    recall  f1-score   support
 
-           0       0.80      0.76      0.78       300
-           1       0.84      0.85      0.85       360
-           2       0.80      0.77      0.78       330
+           0       0.78      0.63      0.70       619
+           1       0.78      0.90      0.84      3131
+           2       0.79      0.62      0.69      1625
 
-    accuracy                           0.81       990
-   macro avg       0.81      0.79      0.80       990
-weighted avg       0.81      0.81      0.81       990
+    accuracy                           0.78      5375
+   macro avg       0.78      0.72      0.74      5375
+weighted avg       0.78      0.78      0.78      5375
 
 Confusion Matrix Across All Folds
 
