@@ -10,7 +10,7 @@ This project demonstrates training a BERT model for sequence classification usin
 - Pandas
 - NumPy
 - Scikit-learn
-- - Matplotlib
+- Matplotlib
 - Seaborn
 
 ## Setup
