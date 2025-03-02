@@ -19,11 +19,34 @@ pip install transformers torch scikit-learn matplotlib seaborn
 ```
 
 ## Dataset
-The dataset used for this project should be a CSV file containing movie reviews, with at least two columns:
 
-- `title`: The title of the movie.
-- `plot`: The plot description of the movie.
-- `rating_class`: A classification of the movie's rating (0: <5, 1: <7, 2: >7).
+The dataset used for this project consists of multiple CSV files, each representing a different approach to collecting and organizing movie data. Below is a detailed breakdown of the datasets:
+
+### Approach 1: Wikipedia + IMDb
+- **File**: `cleaned_movie_dataset_v2.csv`  
+  This dataset combines movie data from Wikipedia and IMDb. It has been cleaned and structured for ease of use.  
+
+### Approach 2: Custom IMDb
+This approach uses custom IMDb datasets divided by decades and a separate file for testing:
+- **a) File**: `movies_90s.csv`  
+  Contains movies released in the 1990s.  
+- **b) File**: `movies_2000s.csv`  
+  Contains movies released in the 2000s.  
+- **c) File**: `movies_latest.csv`  
+  Contains the latest movies and is **never used for training**. It is kept separate exclusively for testing purposes.  
+
+### Approach 3: Wikipedia + Custom IMDb
+- **File**: `cmu_customIMDB.csv`  
+  This dataset merges Wikipedia data with custom IMDb data, providing a comprehensive collection of movie information.  
+
+### Dataset Structure
+All datasets are CSV files containing movie reviews, with at least the following columns:
+- `title`: The title of the movie.  
+- `plot`: The plot description of the movie.  
+- `rating_class`: A classification of the movie's rating:  
+  - `0`: Rating < 5  
+  - `1`: Rating < 7  
+  - `2`: Rating > 7  
 
 Ensure your dataset is structured similarly, and update the path variable in the code to point to the correct location of your dataset CSV file.
 
