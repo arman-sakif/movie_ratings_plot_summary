@@ -148,5 +148,26 @@ Confusion Matrix Across All Folds
 - You can adjust the number of epochs or batch size based on your hardware capabilities.
 - The script is designed to run on either a GPU or CPU, depending on what is available.
 
+## Experimental Results
+
+## Approach 1
+| Metric        | Precision | Recall | F1-Score |
+|--------------|-----------|--------|----------|
+| **Macro Avg**   | 0.78      | 0.72   | 0.74     |
+| **Weighted Avg**| 0.78      | 0.78   | 0.78     |
+
+## Approach 2
+| Metric        | Precision | Recall | F1-Score |
+|--------------|-----------|--------|----------|
+| **Macro Avg**   | 0.79      | 0.77   | 0.78     |
+| **Weighted Avg**| 0.81      | 0.81   | 0.81     |
+
+## Approach 3
+| Metric        | Precision | Recall | F1-Score |
+|--------------|-----------|--------|----------|
+| **Macro Avg**   | 0.79      | 0.77   | 0.78     |
+| **Weighted Avg**| 0.81      | 0.81   | 0.81     |
+
+
 ## License
 
